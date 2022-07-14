@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>String metodları</title>
+</head>
+<!-- Ctrl o kısayoldan yorum satırı ekleme için kullanılır  -->
+
+<body>
+    <script>
+        var metin = "Ben bugün Javascript e başladım. Javascript  sjdfjsdfks jkjdfksd çok çok çok güzel bir dil.";
+        document.write(metin);
+        var pos = metin.length; //Karakte uzunluğu .length
+        // alert(pos);
+        var pos = metin.indexOf("JavaScript"); //Girilen yazının var olduğu index 
+        document.write(pos);
+        var pos = metin.lastIndexOf("JavaScript");
+        // alert(pos);
+        var pos = metin.search("çok");
+        // alert(pos);
+        var pos = metin.slice(0, 10); //Metin parçalama 
+        // alert(pos);
+        var pos = metin.substr(20, 30); // 20 den başla 30 karakter git
+        // alert(pos);
+        var pos = metin.substring(10, 15); // 10 dan başla 15'e kadar git 
+        // alert(pos);
+        var pos = metin.replace("Javascript", "react"); // Çift tırnak içerisinde yazarsan ilk bulduğunu değiştirir
+        var pos = metin.replace(/Javascript/g, "react"); // ama şu şekilde yazarsan /....../g, şeklinde yazarsan tüm oluşumlarda noktalı yeri değiştirir.
+        //alert(pos);
+        pos = metin.toUpperCase(); // Karakterleri hepsini büyük hale getirir.
+        // alert(pos);
+        pos = metin.toLowerCase(); //Karakterlerin hepsini küçük hale getirir.
+        // alert(pos);
+        var fname = "Furkan";
+        var Lname = "Aslan";
+        var fullname = fname.concat(" ", Lname); // birleştirme işlemi yapıldı sol taraftaki eklenip sağ tarafdaki ile birleştirildi
+        // alert(fullname);
+        var char = metin.charAt(5); //  string ifadede belirtilen indisteki değeri bize verir .
+        // alert(char);
+        var Split_text = "Furkan; Aslan; 22 ; yaşında";
+        var list = Split_text.split(";"); // bir dizeyi bir dizi alt dizeye böler.
+        console.log(list);
+        alert(list);
+    </script>
+</body>
+
+</html>

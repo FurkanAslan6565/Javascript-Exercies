@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        // Özellikler... Properties 
+
+        var araba = {
+            name: "BMW",
+            Model: "1.6",
+            weight: 2000,
+            color: "white",
+            years: 2000,
+            start: function() {
+                alert("Araba çalıştırıldı.");
+
+            },
+            drive: function() {
+                alert("Araba hareketlendi");
+            },
+            stop: function() {
+                alert("Araba durdu.");
+            },
+            getinfo: function() {
+                console.log("ad : " + araba.name); // this.name de kullansam farketmezdi.
+                console.log("Model : " + araba.Model); // this.name de kullansam farketmezdi.
+                console.log("Renk: " + araba.color); // this.name de kullansam farketmezdi.
+                console.log("Yıl : " + araba.years);
+            },
+            getAge: function() {
+                return 2022 - araba.years;
+
+            }
+        };
+        console.log(araba.color);
+        araba.getinfo();
+        araba.drive();
+        alert("Arabanın yaşı : " + araba.getAge());
+    </script>
+</body>
+
+</html>

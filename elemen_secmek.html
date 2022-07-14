@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Element seç</title>
+</head>
+
+<body>
+    <div id="container"></div>
+    <!-- div#container kısayolu -->
+    <p class="class"></p>
+    <!-- p.class kısayolu ile  -->
+    <p class="class"></p>
+    <input type="text" name="name">
+    <!--input.name kısayolu ile -->
+    <a href="#"></a>
+    <script>
+        document.getElementById("container").innerHTML = "Get element by ıd";
+        document.getElementsByClassName("class")[0].innerHTML = "GetelementByclass name ile gelen değer.";
+        document.getElementsByName("name")[0].value = 2654 + 4545;
+        document.getElementsByTagName("a")[0].innerHTML = "Furkan aslanın web sitesi";
+    </script>
+
+</body>
+
+</html>

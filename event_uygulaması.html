@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Event Uygulaması</title>
+</head>
+
+<body>
+    Sayı 1 : <input id="Sayi1" type="text"> Sayı 2 : <input id="Sayi2" type="text">
+    <button onclick="topla()">+</button>
+    <!-- buttona bastığında clicklediğinde  js fonksiyonu çalıştır -->
+    <button onclick="cikarma()">-</button>
+    <button onclick="carpma()">*</button>
+    <button onclick="Bolme()">/</button>
+    <br>
+    <strong>Sonuç</strong>
+    <div id="result"></div>
+    <script>
+        var result = document.getElementById("result");
+        var Sayi1 = document.getElementById("Sayi1");
+        var Sayi2 = document.getElementById("Sayi2");
+
+        function topla() {
+            result.innerHTML = parseInt(Sayi1.value) + parseInt(Sayi2.value);
+        }
+
+        function cikarma() {
+            result.innerHtml = parseInt(Sayi1.value) - parseInt(Sayi2.value);
+        }
+
+        function carpma() {
+            result.innerHTML = parseInt(Sayi1.value) * parseInt(Sayi2.value);
+        }
+
+        function Bolme() {
+            result.innerHTML = parseInt(Sayi1.value) / parseInt(Sayi2.value);
+        }
+    </script>
+</body>
+
+</html>

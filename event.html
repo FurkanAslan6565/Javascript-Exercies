@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    .area {
+        height: 100px;
+        width: 200px;
+        background-color: blue;
+        font-size: 20px;
+        color: chartreuse;
+    }
+</style>
+
+<body>
+    <div id="container">Ankara </div>
+    <button onclick="this.innerHTML='Hesaplandı'">Hesapla</button>
+    <!--butona tıkladığımda innerHtml Hesaplandı yazsın.b  -->
+    <input type="text" onchange="console.log('Değişti..!!')">
+
+    <!-- <select> etiketi açılır listeler oluşturmak için kullanılır.
+    <option> etiketi <select> etiketi içerisinde kullanılarak 
+    liste öğeleri tanımlamak için kullanılır.-->
+
+    <select id="liste" onchange='document.getElementById("container").innerHTML=this.value; '> 
+        <!-- Bir metin kutusu, metin alanı ya da seçim listesindeki 
+        bir metin değiştiği zaman ya da kontrol nesnesi odaktan çıkınca bir eylem grubunu harekete geçirir.-->
+        <option > Ankara</option>
+        <option > Bursa </option>
+        <option > Ceyhan</option>
+    </select>
+    <!--
+        OnMouseOver: Fare nesnemizin üzerine geldiğinde belirtilen işlevi görür.
+        OnMouseOut: Fare nesnemizin üzerinden çekildiğinde belirtilen işlevi görür.
+    -->
+
+    <div class="area" onmouseover="this.innerHTML='Üstünde'" onmouseout="this.innerHTML= 'Ayrıldı' "></div>
+
+    <script>
+        // event : başına gelen aksiyonlar .
+    </script>
+</body>
+
+</html>

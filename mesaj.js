@@ -1,0 +1,1 @@
+alert("Bu harici bir dosyadan gelen mesaj kutusudur");
