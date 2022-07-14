@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Array Methods</title>
+</head>
+
+<body>
+    <script>
+        var sınıfA = ["Furkan", "Medine", "Berjin Liza", "Aslan"];
+        console.log(sınıfA);
+        //length()--> Dizinin uzunluğunu verececk
+        console.log(sınıfA.length);
+        //toString() -- > Bize diziyi string olarakn döndürür.
+        console.log(sınıfA.toString());
+        //join() --> Sizin dizinizin arasına istediğinizi koymanızı sağlar.
+        console.log(sınıfA.join("-"));
+        //pop()--> Diziden son elemanı çıkarır.
+        //var pop = sınıfA.pop();
+        //console.log(pop);
+        console.log(sınıfA);
+        //push() --> Diziye eleman ekler.
+        console.log(sınıfA.push("Rojda"));
+        console.log(sınıfA);
+        //shift() --> Baştan eleman siler.
+        console.log(sınıfA.shift());
+        console.log(sınıfA);
+        //unshift() --> Başa eleman ekler.
+        console.log(sınıfA.unshift("Furkan&Medine"));
+        console.log(sınıfA);
+        //splice() --> elaman silme ve sildiği elemanı doldurma işine yarar.
+        console.log(sınıfA.splice(0, 2, "BerjinLiza&Aslan")); // 0 dan sonra ilk iki elemanı sil yerine .... yaz 
+        console.log(sınıfA.splice(0, 3)); // Sıfırdan sonra 4 Elemanı sil
+        console.log(sınıfA);
+        //concat() --> 
+        var sınıfB = new Array("Baba", "Anne", "KızÇoçuğu", "Erkekçoçuğu");
+        var concatarr = sınıfA.concat(sınıfB);
+        console.log(concatarr);
+        console.log(sınıfA);
+    </script>
+</body>
+
+</html>
