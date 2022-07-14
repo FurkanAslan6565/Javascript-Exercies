@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Number Method</title>
+</head>
+
+<body>
+    <script>
+        var x = 6.258;
+        var exp = x.toExponential(2); // bir sayıyı üstel gösterime dönüştürür.
+        // alert(exp);
+        var fixed = x.toFixed(2); //JavaScript'te toFixed(), bir sayıyı sabit noktalı gösterime dönüştürmek 
+        //(gerektiğinde sonucu yuvarlamak) ve değerini bir dize olarak döndürmek 
+        //için kullanılan bir Number yöntemidi
+        // alert(fixed);
+        var prec = x.toPrecision(3); //yöntem, bir sayıyı belirli bir uzunlukta biçimlendirir. 
+        //Belirtilen uzunluğu oluşturmak için (gerekirse) bir ondalık nokta ve boş değerler eklenir.
+        alert(prec);
+        //valueOf()  number e çevirir.
+    </script>
+</body>
+
+</html>
